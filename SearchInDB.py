@@ -53,7 +53,7 @@ class Window(QtWidgets.QWidget):
     def set_settings_main_window(self):
         """Найстройка главного окна"""
         self.resize(1200, 700)
-        self.setWindowTitle("NVBS")
+        self.setWindowTitle("SearchInDB")
         self.setWindowIcon(QtGui.QIcon("Icons/main.ico"))
 
     def set_settings_combo_boxes(self):
