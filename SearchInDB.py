@@ -41,7 +41,7 @@ class Window(QtWidgets.QWidget):
 
         self.table_widget = QtWidgets.QTableWidget()  # Создание таблицы
         self.header_list = ["Улица", "Дом", "Место", "TKD", "IP", "Примечание"]  # Названия хедера таблицы
-        self.width_header = [250, 100, 160, 125, 125, 395]
+        self.width_header = [250, 100, 160, 125, 125, 395]  # Размеры столбцов хедера
         self.set_settings_table_widget()  # Настройка таблицы
 
         v_layout = QtWidgets.QVBoxLayout()  # Создание вертикального лейаута
