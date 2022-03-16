@@ -144,7 +144,7 @@ class Window(QtWidgets.QWidget):
                      for j in range(0, self.table_widget.rowCount())]
 
             for i in array:
-                if i != [""] * 6:
+                if i != [""] * len(self.header_list):
                     sheet.append(i)
             book.save("DataBase.xlsx")
 
