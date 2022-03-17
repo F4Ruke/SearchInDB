@@ -1,2 +1,2 @@
 @echo off
-%CD%\python.exe logic.py %*
+%CD%\python.exe main.py %*

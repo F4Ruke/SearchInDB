@@ -1,6 +1,8 @@
 from settings import Settings, QtWidgets
-from sys import argv
 import openpyxl
+
+book = openpyxl.load_workbook("DataBase.xlsx")
+sheet = book.active
 
 
 class Logic(Settings):
@@ -75,12 +77,3 @@ class Logic(Settings):
                 sheet.delete_rows(i)
                 break
         book.save("DataBase.xlsx")
-
-
-if __name__ == "__main__":
-    book = openpyxl.load_workbook("DataBase.xlsx")
-    sheet = book.active
-    app = QtWidgets.QApplication(argv)
-    window = Logic()
-    window.show()
-    app.exec()
