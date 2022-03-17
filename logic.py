@@ -31,8 +31,8 @@ class Logic(Settings):
                     if text != "None":
                         self.table_widget.setItem(string_index - 1, j, QtWidgets.QTableWidgetItem(text))
                 string_index += 1
-            if string_index == 1:
-                self.table_widget.setRowCount(0)
+        if string_index == 1:
+            self.table_widget.setRowCount(0)
         self.count = 0
         self.flag = False
 
