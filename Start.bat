@@ -1,2 +1,2 @@
 @echo off
-%CD%\python.exe SearchInDB.py %*
+%CD%\python.exe logic.py %*
